@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #dedef4;
+}
+
+header{
+    background: #335a82;
+    color: #fff;
+    padding: 2rem 4rem;
+    font-size: .8rem;
+    text-align: center;
+}
+
+main{
+    max-width: 60%;
+    /* border: 2px solid red; */
+    margin: 3rem auto;
+    padding: .5rem;
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgba(0,0,0,0.7);
+    padding: 1rem 0;
+    background: rgba(0,0, 0, 0.2);
+    /* border: 2px solid black; */
+
+}
+
+.assignment-section{
+    background: #fff;
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.asssignment-lists{
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+.asssignment-lists li{
+    border-bottom: 1px solid #222;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    /* flex-wrap: wrap; */
+}
+
+.week-label{
+    font-weight: bold;
+}
+
+.assignment-link{
+    text-decoration: none;
+    color: #3498db;
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+.assignment-link:hover{
+    color: #1c6fa7;
+    text-decoration: underline;
+}
+
+.status{
+    background: #27ae60;
+    border-radius: 14px;
+    padding: .7rem .9rem;
+    color: #fff;
+
+}
