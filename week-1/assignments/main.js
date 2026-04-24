@@ -37,8 +37,3 @@ summary.textContent = grades
 
 // const pass = sampleScores.find(el => el > 60)
 // console.log(`pass ${pass}`)
-
-
-
-
-
