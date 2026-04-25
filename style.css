@@ -85,5 +85,7 @@ footer{
     border-radius: 14px;
     padding: .7rem .9rem;
     color: #fff;
-
+}
+.pending{
+    background: #ED2939;
 }
