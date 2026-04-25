@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+
+}
+
+.shop-layout {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    padding: 1rem 2rem;
+    height: 100vh;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: 3rem 1fr 8rem;
+
+
+}
+
+.shop-header {
+    grid-area: header;
+    padding: 1rem;
+    border: 1px solid black;
+    background: #4169E1;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.shop-sidebar {
+    grid-area: sidebar;
+    padding: 1rem;
+    background: #004687;
+    border: 1px solid black;
+    color: white;
+
+
+}
+
+.shop-main {
+    grid-area: main;
+    background: #b7cdee;
+    padding: 1rem;
+    border: 1px solid black;
+
+
+}
+
+.product-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.product-card {
+    padding: .5rem;
+    border-radius: 8px;
+    height: 8rem;
+    background: #fff;
+    border: 1px solid black;
+
+}
+
+.shop-footer {
+    grid-area: footer;
+    background: #B0C4DE;
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+@media (max-width: 612px) {
+    .shop-layout {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "sidebar sidebar sidebar" 
+            "main main main"
+            "footer footer footer";
+        padding: 1rem 2rem;
+        height: 100vh;
+        grid-template-columns: 15rem 1fr;
+        grid-template-rows: 3rem 5rem 1fr 8rem;
+
+
+    }
+}
