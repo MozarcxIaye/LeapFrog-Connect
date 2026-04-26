@@ -13,6 +13,7 @@ body {
 }
 
 .promo-ui{
+    position: relative;
     max-width: 30rem;
     max-height: 40rem;
     margin: 3rem auto;
@@ -103,6 +104,32 @@ body {
     border-top: 16px solid #e0e0e0;        
     border-radius: 50%;
     animation: spin 2s linear infinite;
+}
+
+.promo-pulse-loader{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #ED2939;
+    border-radius: 50%;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
 }
 
 @keyframes spin {
