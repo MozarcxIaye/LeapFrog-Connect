@@ -28,13 +28,9 @@ main{
 
 footer{
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: rgba(0,0,0,0.7);
+    color: #212121;
     padding: 1rem 0;
     background: rgba(0,0, 0, 0.2);
-    /* border: 2px solid black; */
 
 }
 
@@ -43,6 +39,10 @@ footer{
     border-radius: 14px;
     padding: 2rem;
     box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-section h2{
+    text-align: center;
 }
 
 .asssignment-lists{
@@ -60,12 +60,13 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .5rem;
-    /* flex-wrap: wrap; */
+    gap: 1rem;
 }
 
 .week-label{
     font-weight: bold;
+    text-align: center;
+    color: #3a3a3a;
 }
 
 .assignment-link{
@@ -89,3 +90,27 @@ footer{
 .pending{
     background: #ED2939;
 }
+
+@media only screen and (max-width: 620px) {
+    main{
+        max-width: 90%;
+    }
+
+    .asssignment-lists li{
+    }
+
+    .week-label{
+        font-size: 0.9rem;
+    }
+
+    .assignment-link{
+        font-size: 0.9rem;
+    }
+
+    .status{
+        font-size: 0.9rem;
+        padding: .6rem;
+    }
+
+}
+
