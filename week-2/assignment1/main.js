@@ -33,14 +33,14 @@ function renderWeather(data) {
           <p>Sea Level: ${data.main.sea_level}</p>`
 }
 
+// for submitting the form
+async function handleSubmit(e) {
 
-// event listener placeholderto the click button
-searchBtn.addEventListener("click", async () => {
+    e.preventDefault()
+    // to handle the from submission 
     const city = cityInput.value
 
-    if(city) {
-        const weather = await fetchWeather(city)
-        console.log(weather)
-        renderWeather(weather)
-    }
-})
+    if(!city) return 
+    const weather = await fetchWeather(city)
+    renderWeather(weather)
+}
