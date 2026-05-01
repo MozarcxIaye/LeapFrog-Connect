@@ -1,0 +1,125 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #ddd;
+    --border-thick: 3px solid #000;
+    --font-main: "Courier New", Courier, monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-gray);
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    background: var(--color-white);
+    border: var(--border-thick);
+    box-shadow: 10px 10px 0px var(--color-black);
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+}
+
+.title-bar {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--border-thick);
+}
+
+.window-content {
+    padding: clamp(15px, 5vw, 30px);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    border-bottom: var(--border-thick);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+#city-input {
+    flex-grow: 1;
+    border: var(--border-thick);
+    padding: 12px;
+    font-family: var(--font-main);
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+#search-btn {
+    background: var(--color-black);
+    color: var(--color-white);
+    border: var(--border-thick);
+    border-left: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.1s;
+}
+
+#search-btn:active {
+    background: var(--color-gray);
+    color: var(--color-black);
+}
+
+#weather-result h2 {
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+#weather-result p {
+    margin: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--color-black);
+    padding-bottom: 4px;
+}
+
+#weather-result img {
+    filter: grayscale(1) contrast(300%);
+    image-rendering: pixelated;
+    border: var(--border-thick);
+    padding: 8px;
+    margin: 0 auto 20px auto;
+    display: block;
+    width: 120px;
+    background: #939393;
+}
+
+@media (max-width: 400px) {
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search-btn {
+        border-left: var(--border-thick);
+        width: 100%;
+    }
+
+    main {
+        box-shadow: 6px 6px 0px var(--color-black);
+    }
+}
