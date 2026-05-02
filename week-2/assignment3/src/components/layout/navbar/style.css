@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+  --clr-blue-dark: #003153;
+  --clr-blue-steel: #4682B4;
+  --clr-blue-teal: #367588;
+  --clr-dark: #111;
+  --clr-light: #fff;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Nunito", sans-serif;
+}
+
+header{
+  background: var(--clr-blue-dark);
+  width: 100%;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+}
+
+.nav-main{
+  max-width: 1300px;
+  display: flex;
+  padding: 0 40px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+}
+
+.nav-left, .nav-right{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+.nav-links, .nav-actions{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: var(--clr-light);
+  font-weight: bold;
+  transition: all 0.2 ease;
+}
+
+.nav-links a:hover{
+  color: var(--clr-blue-steel);
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.nav-actions li{
+  list-style: none;
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+.nav-actions a{
+  text-decoration: none;
+  color: var(--clr-light);
+  transition: 0.2s all ease;
+
+}
+
+.nav-actions a:hover{
+  color: var(--clr-blue-steel);
+}
+
+.nav-actions button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--clr-light);
+  font-size: 1.1rem;
+  font-family: var(--font-primary);
+}
+
+.lang-btn{
+  border: 1px solid white !important;
+  border-radius: 4px;
+  padding: 3px 5px !important;
+  font-size: 0.8rem !important;
+  font-weight: bold;
+}
+
+.lang-btn:hover{
+  color: var(--clr-blue-dark);
+  background: var(--clr-light);
+}
