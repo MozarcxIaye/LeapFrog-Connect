@@ -4,7 +4,6 @@ const SearchForm = ({city, setCity, fetchWeather}) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         fetchWeather()
-        console.log("form submitted")
     }
 
     return (

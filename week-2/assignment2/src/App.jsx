@@ -25,13 +25,12 @@ function App() {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
       const response = await fetch(url)
 
-      // if (!weather) throw new Error(`Could not find the weather data for the city ${city}`)
+      if(!city) throw new Error ("Please enter a city.")
 
       if (!response.ok) throw new Error(response.status == 404 ? "City not found. Please check the typo." : "Something went wrong. Please try again")
 
       const data = await response.json()
       setWeather(data)
-      console.log(data)
 
     } catch (error) {
       setError(error.message)

@@ -104,6 +104,17 @@ form{
     padding-bottom: 4px;
 }
 
+#weather-result img {
+    filter: grayscale(1) contrast(300%);
+    image-rendering: pixelated;
+    border: var(--border-thick);
+    padding: 8px;
+    margin: 0 auto 20px auto;
+    display: block;
+    width: 120px;
+    background: #939393;
+}
+
 @media (max-width: 400px) {
     form {
         flex-direction: column;
