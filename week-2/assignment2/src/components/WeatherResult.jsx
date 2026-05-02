@@ -1,7 +1,13 @@
 
-const WeatherResult = ({ weather, loading }) => {
+const WeatherResult = ({ weather, loading, error }) => {
     return (
         <section id="weather-result">
+
+            {!loading && error && (
+                <div className="error-result">
+                    {error}
+                </div>
+            )}
 
             {loading ? <p>Loading the Weather details...</p> : 
             
