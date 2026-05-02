@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --clr-blue-dark: #003153;
+    --clr-blue-steel: #4682B4;
+    --clr-blue-teal: #367588;
+    --clr-dark: #111;
+    --clr-light: #fff;
+    --font-primary: "Montserrat", sans-serif;
+    --font-secondary: "Nunito", sans-serif;
+}
+
+footer {
+    background: var(--clr-blue-dark);
+    color: var(--clr-light);
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    font-family: var(--font-secondary);
+
+}
+
+.main-footer{
+    display: flex;
+    gap: 3rem;
+
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-logo button {
+    background: var(--clr-light);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: var(--clr-blue-steel);
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.footer-logo button:hover {
+    transform: scale(1.05);
+}
+
+.footer-blocks h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.footer-blocks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-blocks li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    cursor: pointer;
+    color: var(--clr-light);
+    transition: color 0.2s;
+}
+
+.footer-blocks li:hover {
+  color: var(--clr-blue-steel);
+}
