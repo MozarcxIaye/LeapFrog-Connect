@@ -1,0 +1,124 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #ddd;
+  --border-thick: 3px solid #000;
+  --font-main: "Courier New", Courier, monospace;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#root {
+    background-color: var(--color-gray);
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: radial-gradient(var(--color-black) 1px, transparent 0);
+    background-size: 3px 3px;
+}
+
+main{
+  width: 100%;
+  max-width: 450px;
+  background: var(--color-white);
+  border: var(--border-thick);
+  margin: auto;
+  box-shadow: 10px 10px 0 var(--color-black);
+}
+
+.title-bar{
+  background: var(--color-black);
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: var(--border-thick);
+  font-size: 14px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.title-bar span:last-child{
+  cursor: pointer;
+}
+
+.window-content{
+  padding: clamp(15px, 5vw, 30px);
+}
+
+form{
+  display: flex;
+  gap: 0;
+  border-bottom: var(--border-thick);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+#city-input{
+  flex: 1;
+  border: var(--border-thick);
+  padding: 10px;
+  font-family: var(--font-main);
+  outline: none;
+}
+
+#search-btn{
+  border: var(--border-thick);
+  color: var(--color-white);
+  background: var(--color-black);
+  border-left: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: var(--font-main);
+  transition: background 0.1s;
+}
+
+
+#search-btn:active{
+  background: var(--color-gray);
+  color: var(--color-black);
+}
+
+#weather-result h2 {
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+#weather-result p {
+    margin: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--color-black);
+    padding-bottom: 4px;
+}
+
+@media (max-width: 400px) {
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search-btn {
+        border-left: var(--border-thick);
+        width: 100%;
+    }
+
+    main {
+        box-shadow: 6px 6px 0px var(--color-black);
+    }
+}
+
+
+
