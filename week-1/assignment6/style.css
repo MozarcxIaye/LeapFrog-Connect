@@ -335,11 +335,21 @@ body {
 
 }
 
-@media (max-width: 650px) {
+@media only screen and (max-width: 650px) {
+
+    .portfolio-header {
+        flex-direction: column;
+        padding: .5rem 1rem;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+
     .portfolio-hero {
         flex-direction: column-reverse;
         height: 100vh;
-        margin-top: 5rem;
+        margin-top: 9rem;
     }
 
     .hero {
