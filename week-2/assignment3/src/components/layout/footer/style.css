@@ -22,7 +22,7 @@ footer {
 
 }
 
-.main-footer{
+.main-footer {
     display: flex;
     gap: 3rem;
 
@@ -75,5 +75,28 @@ footer {
 }
 
 .footer-blocks li:hover {
-  color: var(--clr-blue-steel);
+    color: var(--clr-blue-steel);
+}
+
+@media (max-width: 768px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        padding: 40px 20px;
+    }
+
+    .main-footer{
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+
+    }
+    .footer-logo {
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
 }
