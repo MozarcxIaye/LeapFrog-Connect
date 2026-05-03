@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+  --clr-blue-dark: #003153;
+  --clr-blue-steel: #4682B4;
+  --clr-blue-teal: #367588;
+  --clr-dark: #111;
+  --clr-light: #fff;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Nunito", sans-serif;
+}
+
+section{
+  width: 100%;
+  min-height: 300px;
+  background: var(--clr-blue-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+}
+
+.searchbar-container{
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.search-content{
+  font-family: var(--font-primary);
+}
+
+.search-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--clr-light);
+}
+
+.search-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--clr-light);
+  margin-bottom: 30px;
+}
+
+.searchbar{
+  /* position: relative; */
+  display: flex;
+  gap: .5rem;
+
+}
+.searchbar input{
+  width: 100%;
+  padding: .7rem 1.5rem;
+  border-radius: .5rem;
+  border: none;
+  color: #367588;
+  outline: none;
+}
+
+.searchbar button{
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: .5rem;
+  background: linear-gradient(to right, #679d90, #01b4e4);
+  color: var(--clr-light);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}

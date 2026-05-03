@@ -1,0 +1,47 @@
+.popular-container {
+  max-width: 1300px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 40px;
+}
+
+.section-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #032541; 
+  margin-bottom: 10px;
+
+}
+
+.section-header .underline {
+  width: 50px;
+  height: 4px;
+  background: linear-gradient(to right, #1ed5a9, #01b4e4);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-grid {
+    grid-template-columns: 1fr;
+    gap: 40px; 
+  }
+  
+  .popular-container {
+    padding: 0 20px;
+  }
+}
