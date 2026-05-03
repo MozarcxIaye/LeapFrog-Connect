@@ -5,7 +5,7 @@ This repository contains all the assignments and projects completed during the L
 ## Live Project Index
 
 A live, browsable index of all completed assignments is available here:
-[**View All Assignments**](https://mozarcxiaye.github.io/leapfrog-connect/)
+[**View All Assignments**](https://mozarcxiaye.github.io/LeapFrog-Connect/)
 
 ## Assignments Overview
 
