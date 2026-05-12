@@ -1,0 +1,28 @@
+
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-primary);
+}
+
+.error-404 h1{
+    font-size: 8rem;
+    text-align: center;
+}
+
+.error-description{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.error-description h3{
+    font-size: 2rem;
+
+}
+
+.error-description p{
+    color: #474747;
+    font-size: 1.3rem;
+}
