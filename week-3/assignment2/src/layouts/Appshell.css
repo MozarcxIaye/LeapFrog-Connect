@@ -1,0 +1,17 @@
+.app-shell{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.content-section{
+    flex-grow: 1;
+}
