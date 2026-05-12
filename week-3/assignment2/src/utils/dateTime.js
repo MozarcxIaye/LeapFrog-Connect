@@ -10,6 +10,5 @@ export function getFormattedDateTime() {
         timeStyle: "short"
     }).format(now)
 
-    return {date, time}
+    return [date, time]
 }
-

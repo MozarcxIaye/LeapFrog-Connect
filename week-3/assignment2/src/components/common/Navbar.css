@@ -1,0 +1,25 @@
+.nav-bar{
+    font-family: var(--ff-secondary);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.2rem;
+    background: #a1a1a123;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+}
+
+.profile-mini{
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-icon{
+    font-size: 2rem;
+
+}
+.menu-drop{
+    cursor: pointer;
+}
