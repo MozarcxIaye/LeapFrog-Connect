@@ -1,5 +1,6 @@
-.sidebar{
-    width: 20vw;
+.sidebar {
+    width: 250px;
+    max-width: 30vw;
     height: 100vh;
     flex-shrink: 0;
     padding: 2rem 1rem;
@@ -7,12 +8,13 @@
     background: #eee2f7;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
-.nav-item{
+
+.nav-item {
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -21,7 +23,7 @@
     transition: 0.2s all ease;
 }
 
-.nav-item{
+.nav-item {
     display: flex;
     gap: 1rem;
     flex-direction: row;
@@ -32,13 +34,13 @@
 
 }
 
-.nav-item:hover{
+.nav-item:hover {
     background: #b4b4b4;
 }
 
 .nav-item.active {
     color: #fff;
     font-weight: bold;
-    background: #b2a8e6; 
+    background: #b2a8e6;
     border-right: 4px solid #8674d5;
 }
