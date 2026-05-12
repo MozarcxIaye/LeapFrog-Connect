@@ -1,0 +1,8 @@
+.footer{
+    text-align: center;
+    color: #545454;
+    font-family: var(--ff-secondary);
+    background: #a1a1a123;
+    padding: 1rem;
+    border-radius: 8px;
+}
