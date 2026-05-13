@@ -9,6 +9,7 @@ import ProfileSetting from './pages/ProfileSetting'
 import NewMetting from './pages/NewMeeting'
 import JoinMeeting from './pages/JoinMeeting'
 import ScheduleMeeting from './pages/ScheduleMeeting'
+import MeetingDetails from './pages/MeetingDetails'
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
         <Route path='/new-meeting' element={<NewMetting />}></Route>
         <Route path='/schedule-meeting' element={<ScheduleMeeting />}></Route>
         <Route path='/profile-setting' element={<ProfileSetting />}></Route>
+
+        <Route path='/meetings/:meetingId' element={<MeetingDetails />}></Route>
       </Route>
       <Route path='*' element={<PageNotFound />}></Route>
     </Routes>

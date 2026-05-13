@@ -2,8 +2,16 @@ import React from 'react'
 import { DASHBOARD_ROUTES } from '../data/dashboardRoute'
 import "./Dashboard.css"
 import { UPCOMMING_MEETINGS } from '../data/upcommingMeetings'
+import { useNavigate } from 'react-router'
 
 const Dashboard = () => {
+  
+  const navigate = useNavigate()
+
+  const handleJoin = (id) => {
+    navigate(`/meetings/${id}`)
+  }
+
   const user = "Chris"
   return (
     <main>
@@ -45,7 +53,7 @@ const Dashboard = () => {
                   {item.time}
                 </p>
                 <div className="join-btn">
-                  <button>Join</button>
+                  <button onClick={() => handleJoin(item.id)}>Join</button>
                 </div>
               </div>
 

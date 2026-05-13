@@ -1,8 +1,11 @@
 import React from 'react'
+import "./ProfileSetting.css"
 
 const ProfileSetting = () => {
   return (
-    <div>ProfileSetting</div>
+    <div className='profile-setting'>
+      <h1>Profile Setting</h1>
+    </div>
   )
 }
 

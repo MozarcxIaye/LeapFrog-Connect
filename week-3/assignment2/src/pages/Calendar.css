@@ -11,7 +11,7 @@
 }
 
 .toggle-btns button{
-    background: #cb91ef;
+    background: #cca0ed;
     font-family: var(--ff-secondary);
     border: none;
     padding: .5rem 1rem;
@@ -21,7 +21,7 @@
 }
 
 .toggle-btns button.active{
-    background: #a33ce3;
+    background: #8674d5;
 }
 
 .view-contents{
