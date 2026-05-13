@@ -29,7 +29,7 @@ export const SIDEBAR_LINKS = [
      {
         id: 4,
         label: "Calendar",
-        path: "/calendar",
+        path: "/calendar?view=month",
         icon: FaRegCalendarAlt
     },
      {

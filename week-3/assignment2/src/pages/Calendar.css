@@ -1,0 +1,29 @@
+.calendar{
+    font-family: var(--ff-secondary);
+}
+
+.calendar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d2d2d2;
+
+}
+
+.toggle-btns button{
+    background: #cb91ef;
+    font-family: var(--ff-secondary);
+    border: none;
+    padding: .5rem 1rem;
+    color: #fff;
+    transition: 0.2s all ease;
+    font-weight: bold;
+}
+
+.toggle-btns button.active{
+    background: #a33ce3;
+}
+
+.view-contents{
+    margin-top: 2rem;
+}

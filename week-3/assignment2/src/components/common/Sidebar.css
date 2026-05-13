@@ -8,8 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
-    /* Ensures it stays above content */
+    z-index: 10;
     border-right: 1px solid #e5e7eb;
 }
 
