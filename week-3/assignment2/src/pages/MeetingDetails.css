@@ -1,6 +1,28 @@
 .meeting-details{
     font-family: var(--ff-secondary);
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tabs a{
+    text-decoration: none;
+    background: #cca0ed;
+    font-family: var(--ff-secondary);
+    border: none;
+    padding: .5rem 1rem;
+    color: #fff;
+    transition: 0.2s all ease;
+    font-weight: bold;
+
+}
+
+.tabs a.active{
+    background: #8674d5;
+}
+
+.meeting-content {
+    background: #f0f0f0;
+    padding: 20px;
+    min-height: 200px;
 }

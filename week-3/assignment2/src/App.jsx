@@ -10,6 +10,8 @@ import NewMetting from './pages/NewMeeting'
 import JoinMeeting from './pages/JoinMeeting'
 import ScheduleMeeting from './pages/ScheduleMeeting'
 import MeetingDetails from './pages/MeetingDetails'
+import MeetingInfo from './components/MeetingInfo'
+import MeetingParticipants from './components/MeetingParticipants'
 
 const App = () => {
   return (
@@ -22,7 +24,10 @@ const App = () => {
         <Route path='/schedule-meeting' element={<ScheduleMeeting />}></Route>
         <Route path='/profile-setting' element={<ProfileSetting />}></Route>
 
-        <Route path='/meetings/:meetingId' element={<MeetingDetails />}></Route>
+        <Route path='/meetings/:meetingId' element={<MeetingDetails />}>
+          <Route index path='details' element={<MeetingInfo/>}></Route>
+          <Route path='participants' element={<MeetingParticipants/>}></Route>
+        </Route>
       </Route>
       <Route path='*' element={<PageNotFound />}></Route>
     </Routes>
