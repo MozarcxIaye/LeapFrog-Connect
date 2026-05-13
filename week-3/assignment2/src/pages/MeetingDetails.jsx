@@ -9,7 +9,7 @@ const MeetingDetails = () => {
     return (
         <div className='meeting-details'>
             <div className="tabs">
-                <NavLink to='details'>Details</NavLink>
+                <NavLink to='' end>Details</NavLink>
                 <NavLink to='participants'>Participants</NavLink>
             </div>
 

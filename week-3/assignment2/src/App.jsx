@@ -25,7 +25,8 @@ const App = () => {
         <Route path='/profile-setting' element={<ProfileSetting />}></Route>
 
         <Route path='/meetings/:meetingId' element={<MeetingDetails />}>
-          <Route index path='details' element={<MeetingInfo/>}></Route>
+          <Route index element={<MeetingInfo />}/>
+          <Route path='details' element={<MeetingInfo/>}></Route>
           <Route path='participants' element={<MeetingParticipants/>}></Route>
         </Route>
       </Route>
