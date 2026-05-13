@@ -1,17 +1,18 @@
-.app-shell{
+.app-shell {
     display: flex;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    /* overflow: hidden; */
 }
 
-.main-content{
+.main-content {
+    margin-left: calc(var(--sidebar-width) + 32px);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 1rem;
-    gap: .5rem;
+    padding: 1rem 1.5rem;
+    gap: 2rem;
 }
 
-.content-section{
+.content-section {
     flex-grow: 1;
 }

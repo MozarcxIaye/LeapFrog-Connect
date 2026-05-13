@@ -4,6 +4,7 @@
 :root{
     --ff-primary: "Changa One", sans-serif;
     --ff-secondary: "Montserrat", sans-serif;
+    --sidebar-width: min(250px, 30vw);
 
 }
 
