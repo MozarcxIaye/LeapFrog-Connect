@@ -1,0 +1,11 @@
+:root{
+    --bg-dark: #222;
+    --bg-light: #fff;
+    --text-light: #fff;
+    --text-dark: #222;
+}
+
+[data-theme = "dark"]{
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
