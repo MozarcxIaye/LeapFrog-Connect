@@ -9,3 +9,19 @@
     background: var(--bg-dark);
     color: var(--text-light);
 }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link button{
+    /* background: transparent; */
+    padding: .5rem;
+}
+
+/* .layout{
+    display: flex;
+    flex-direction: column;
+} */
